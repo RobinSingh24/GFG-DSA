@@ -1,9 +1,9 @@
 package BitMagic;
 
 
-public class FindOnlyOddOccurence {
+public class FindOnlyOddOccurrence {
     //works for only single digit no.
-    public static int countOddOccurence(int[] arr){
+    public static int countOddOccurrence(int[] arr){
         int[] count = new int[10];
         for (int j : arr) {
             count[j]++;
@@ -13,7 +13,7 @@ public class FindOnlyOddOccurence {
         }
     return 0;
     }
-    public static int countOddOccurenceUsingXOR(int[] arr){
+    public static int countOddOccurrenceUsingXOR(int[] arr){
         int res=0;
         for (int j : arr) {
             res = res ^ j;
@@ -21,7 +21,7 @@ public class FindOnlyOddOccurence {
     return res;
     }
     public static void main(String[] args) {
-        System.out.println(countOddOccurence(new int[]{4,3,4,4,4,5,5}));
-        System.out.println(countOddOccurenceUsingXOR(new int[]{4,3,4,4,4,5,5,3,3}));
+        System.out.println(countOddOccurrence(new int[]{4,3,4,4,4,5,5}));
+        System.out.println(countOddOccurrenceUsingXOR(new int[]{4,3,4,4,4,5,5,3,3}));
     }
 }

@@ -10,6 +10,6 @@ public class sumOfFirstN {
         }
     }
     public static void main(String[] args) {
-        System.out.print(sumOfNaturalNos(5));
+        System.out.print(sumOfNaturalNos(6));
     }
 }
